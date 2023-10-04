@@ -1,0 +1,2 @@
+
+void    takeav(char **av)
