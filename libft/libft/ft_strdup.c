@@ -6,7 +6,7 @@
 /*   By: bsafi <bsafi@student.42nice.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/02 18:41:50 by bsafi             #+#    #+#             */
-/*   Updated: 2023/04/02 18:51:27 by bsafi            ###   ########.fr       */
+/*   Updated: 2024/02/04 18:44:52 by bsafi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,15 @@ char	*ft_strdup(const char *s)
 	char	*s2;
 	int		i;
 
+	write(1, "hello\n", 6);
 	s2 = malloc(sizeof(char) * (ft_strlen(s) + 1));
 	i = 0;
 	if (!s2)
+	{
+		printf("lala\n");
 		return (0);
+	}
+	printf("el\n");
 	while (s[i])
 	{
 		s2[i] = s[i];

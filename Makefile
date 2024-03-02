@@ -1,6 +1,6 @@
 
 
-SRCS = parsing.c main.c test1.c process.c \
+SRCS = parsing.c main.c test1.c process.c utils.c \
 
 OBJS = ${SRCS:.c=.o}
 NAME = pipex

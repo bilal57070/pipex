@@ -1,19 +1,24 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bsafi <bsafi@student.42nice.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/01/16 21:32:14 by mirio             #+#    #+#             */
+/*   Updated: 2024/02/26 00:10:42 by bsafi            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "pipex.h"
 
-int main(int ac, char **av, char **env)
+int	main(int ac, char **av, char **env)
 {
-	pid_t	pid;
-    t_stru stru;
+	t_stru	stru;
 
-    takeav(av, &stru);
+	getpath(&stru, env);
+	testfile(av);
+	takeav(av, &stru);
 	sizeflags(&stru);
-	makefils(&stru,	av);
-	//getflags(&stru, av);
-	//pid = fork();
-	//firstway(&stru, pid, av, env);
-	//if (pid == 0)
-	//{
-	//}
+	first(&stru, av, env);
 }
