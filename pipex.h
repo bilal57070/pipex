@@ -6,7 +6,7 @@
 /*   By: bsafi <bsafi@student.42nice.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/25 23:32:47 by bsafi             #+#    #+#             */
-/*   Updated: 2024/03/02 15:03:11 by bsafi            ###   ########.fr       */
+/*   Updated: 2024/03/02 15:40:10 by bsafi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,6 @@ char	*ft_strjoin2(char *s1, char *s2);
 char	*ft_strdup2(char *s);
 void	f(char *test, int *pipefd2, char **env, t_stru *stru);
 void	p(int fd, int *pipefd2, char **env, t_stru *stru);
+void	h(t_stru *stru);
 
 #endif

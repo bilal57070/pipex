@@ -6,7 +6,7 @@
 /*   By: bsafi <bsafi@student.42nice.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/26 12:53:01 by mirio             #+#    #+#             */
-/*   Updated: 2024/03/02 15:14:45 by bsafi            ###   ########.fr       */
+/*   Updated: 2024/03/02 15:39:51 by bsafi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ void	getflags(t_stru *stru)
 		i++;
 	}
 	stru->flags[i] = 0;
+	h(stru);
 	/*i = -1;
 	while (stru->flags[++i])
 	{
