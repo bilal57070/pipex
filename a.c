@@ -1,19 +1,9 @@
-total 96
--rw-rw-r-- 1 mirio mirio     0 mars   2 14:32 a.c
--rw-rw-r-- 1 mirio mirio     0 mars   2 14:32 b.c
-drwxrwxr-x 6 mirio mirio  4096 mars   2 14:30 libft
--rw-rw-r-- 1 mirio mirio     0 mars   2 14:32 ls
--rw-rw-r-- 1 mirio mirio  1071 févr. 26 00:10 main.c
--rw-rw-r-- 1 mirio mirio  1800 mars   2 14:30 main.o
--rw-rw-r-- 1 mirio mirio   469 janv. 12 15:02 Makefile
--rw-rw-r-- 1 mirio mirio  2047 févr. 29 17:57 parsing.c
--rw-rw-r-- 1 mirio mirio  3152 mars   2 14:30 parsing.o
--rwxrwxr-x 1 mirio mirio 26664 mars   2 14:30 pipex
--rw-rw-r-- 1 mirio mirio  2434 mars   2 14:30 pipex.h
-drwxrwxr-x 8 mirio mirio  4096 févr.  4 00:00 pipex-tester
--rw-rw-r-- 1 mirio mirio  8578 mars   2 14:25 process.c
--rw-rw-r-- 1 mirio mirio  5112 mars   2 14:30 process.o
--rw-rw-r-- 1 mirio mirio  2878 févr. 29 17:57 test1.c
--rw-rw-r-- 1 mirio mirio  4032 mars   2 14:30 test1.o
--rw-rw-r-- 1 mirio mirio  2206 févr. 25 23:42 utils.c
--rw-rw-r-- 1 mirio mirio  3640 mars   2 14:30 utils.o
+zeeeeeeeeeeeeeedz
+ded
+
+ed
+execddd
+
+
+
+edfef

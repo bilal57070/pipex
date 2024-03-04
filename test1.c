@@ -6,7 +6,7 @@
 /*   By: bsafi <bsafi@student.42nice.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/26 12:53:01 by mirio             #+#    #+#             */
-/*   Updated: 2024/03/02 15:59:39 by bsafi            ###   ########.fr       */
+/*   Updated: 2024/03/02 17:54:00 by bsafi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,18 +81,6 @@ void	h(t_stru *stru, int i)
 		}
 	}
 }
-
-/*void	printsize(t_stru *stru)
-{
-	int	i;
-
-	i = 0;
-	while (stru->sto[i])
-	{
-		printf("sizef = %d\n", stru->sizef[i]);
-		i++;
-	}
-}*/
 
 void	sizecmd(t_stru *stru)
 {

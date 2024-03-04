@@ -1,0 +1,17 @@
+a.c
+b.c
+libft
+main.c
+main.o
+Makefile
+parsing.c
+parsing.o
+pipex
+pipex.h
+process.c
+process.o
+test1.c
+test1.o
+utils.c
+utils.o
+o

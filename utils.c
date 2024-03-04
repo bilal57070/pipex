@@ -6,7 +6,7 @@
 /*   By: bsafi <bsafi@student.42nice.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 15:00:52 by mirio             #+#    #+#             */
-/*   Updated: 2024/02/25 23:42:29 by bsafi            ###   ########.fr       */
+/*   Updated: 2024/03/04 16:13:19 by bsafi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,24 +26,26 @@ void	getpath(t_stru *stru, char **env)
 {
 	int		i;
 	int		j;
+	int		r;
 	char	*line;
 
 	i = -1;
+	r = 0;
 	while (env[++i])
 	{
 		j = 4;
 		if (ft_strncmp(env[i], "PATH", j++) == 0)
 		{
+			r = 1;
 			line = ft_strdup(env[i] + j);
 		}
 	}
+	o(r);
 	stru->path = ft_split(line, ':');
 	free(line);
 	i = -1;
 	while (stru->path[++i])
-	{
 		stru->path[i] = ft_strjoin2(stru->path[i], "/");
-	}
 }
 
 char	*pathcmd(t_stru *stru, char *cmd)
@@ -60,7 +62,8 @@ char	*pathcmd(t_stru *stru, char *cmd)
 		free(test);
 	}
 	printf("probleme accès ou exec cmd \n");
-	exit(1);
+	return (0);
+	//exit(1);
 }
 
 char	*ft_strjoin2(char *s1, char *s2)

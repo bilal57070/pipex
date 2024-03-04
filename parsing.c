@@ -6,7 +6,7 @@
 /*   By: bsafi <bsafi@student.42nice.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 23:02:00 by mirio             #+#    #+#             */
-/*   Updated: 2024/02/29 17:57:10 by bsafi            ###   ########.fr       */
+/*   Updated: 2024/03/04 15:39:31 by bsafi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,16 +48,7 @@ void	countin(t_stru *stru, char **av)
 	}
 }
 
-/*void	printab(t_stru *stru)
-{
-    int i;
-
-    i = -1;
-    while (stru->sto[++i])
-        ft_printf("str = %s\n", stru->sto[i]);
-}*/
-
-void	testfile(char **av)
+void	testfile(t_stru *stru, char **av, char **env)
 {
 	if (access(av[1], F_OK) == -1)
 	{
@@ -66,8 +57,7 @@ void	testfile(char **av)
 	}
 	if (access(av[4], F_OK) == -1)
 	{
-		ft_printf("erreur : fichier existe pas\n");
-		exit(1);
+		newfile(stru, av, env);
 	}
 	if (open(av[1], O_DIRECTORY) != -1)
 	{
@@ -89,4 +79,13 @@ void	lensto(t_stru *stru)
 	stru->lensto = 0;
 	while (stru->sto[++i])
 		stru->lensto++;
+}
+
+void	o(int r)
+{
+	if (r == 0)
+	{
+		ft_printf("error PATH\n");
+		exit(1);
+	}
 }
