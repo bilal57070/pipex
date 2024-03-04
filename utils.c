@@ -6,7 +6,7 @@
 /*   By: bsafi <bsafi@student.42nice.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 15:00:52 by mirio             #+#    #+#             */
-/*   Updated: 2024/03/04 16:13:19 by bsafi            ###   ########.fr       */
+/*   Updated: 2024/03/04 20:25:58 by bsafi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ char	*pathcmd(t_stru *stru, char *cmd)
 	}
 	printf("probleme accès ou exec cmd \n");
 	return (0);
-	//exit(1);
 }
 
 char	*ft_strjoin2(char *s1, char *s2)

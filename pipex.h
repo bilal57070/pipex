@@ -6,7 +6,7 @@
 /*   By: bsafi <bsafi@student.42nice.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/25 23:32:47 by bsafi             #+#    #+#             */
-/*   Updated: 2024/03/04 15:35:17 by bsafi            ###   ########.fr       */
+/*   Updated: 2024/03/04 17:43:27 by bsafi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,13 +68,12 @@ void	free_tab(char **str);
 void	getpaths(t_stru *stru);
 void	getpath(t_stru *stru, char **env);
 char	*pathcmd(t_stru *stru, char *cmd);
-void	testfile(t_stru *stru, char **av, char **env);
+void	testfile(char **av);
 char	*ft_strjoin2(char *s1, char *s2);
 char	*ft_strdup2(char *s);
 void	f(char *test, int *pipefd2, char **env, t_stru *stru);
 void	p(int fd, int *pipefd2, char **env, t_stru *stru);
 void	h(t_stru *stru, int i);
 void	o(int r);
-void	newfile(t_stru *stru, char **av, char **env);
 
 #endif

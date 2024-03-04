@@ -6,7 +6,7 @@
 /*   By: bsafi <bsafi@student.42nice.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 23:02:00 by mirio             #+#    #+#             */
-/*   Updated: 2024/03/04 15:39:31 by bsafi            ###   ########.fr       */
+/*   Updated: 2024/03/04 17:49:08 by bsafi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	countin(t_stru *stru, char **av)
 	}
 }
 
-void	testfile(t_stru *stru, char **av, char **env)
+void	testfile(char **av)
 {
 	if (access(av[1], F_OK) == -1)
 	{
@@ -57,7 +57,7 @@ void	testfile(t_stru *stru, char **av, char **env)
 	}
 	if (access(av[4], F_OK) == -1)
 	{
-		newfile(stru, av, env);
+		open(av[4], O_CREAT | O_WRONLY | O_TRUNC);
 	}
 	if (open(av[1], O_DIRECTORY) != -1)
 	{
