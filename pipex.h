@@ -68,7 +68,7 @@ void	free_tab(char **str);
 void	getpaths(t_stru *stru);
 void	getpath(t_stru *stru, char **env);
 char	*pathcmd(t_stru *stru, char *cmd);
-void	testfile(char **av);
+void	testfile(char **av, t_stru *stru);
 char	*ft_strjoin2(char *s1, char *s2);
 char	*ft_strdup2(char *s);
 void	f(char *test, int *pipefd2, char **env, t_stru *stru);

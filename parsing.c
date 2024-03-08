@@ -48,10 +48,11 @@ void	countin(t_stru *stru, char **av)
 	}
 }
 
-void	testfile(char **av)
+void	testfile(char **av, t_stru *stru)
 {
 	if (access(av[1], F_OK) == -1)
 	{
+		free_tab(stru->path);
 		ft_printf("erreur : fichier existe pas\n");
 		exit(1);
 	}

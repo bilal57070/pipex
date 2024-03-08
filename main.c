@@ -22,7 +22,7 @@ int	main(int ac, char **av, char **env)
 		exit(1);
 	}
 	getpath(&stru, env);
-	testfile(av);
+	testfile(av, &stru);
 	takeav(av, &stru);
 	sizeflags(&stru);
 	first(&stru, av, env);
