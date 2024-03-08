@@ -59,12 +59,12 @@ void	testfile(char **av)
 	{
 		open(av[4], O_CREAT | O_WRONLY | O_TRUNC);
 	}
-	if (open(av[1], O_DIRECTORY) != -1)
+	if (open(av[1], __O_DIRECTORY) != -1)
 	{
 		ft_printf("erreur : probleme fichier (dossier)\n");
 		exit(1);
 	}
-	if (open(av[4], O_DIRECTORY) != -1)
+	if (open(av[4], __O_DIRECTORY) != -1)
 	{
 		ft_printf("erreur : probleme fichier (dossier)\n");
 		exit(1);
