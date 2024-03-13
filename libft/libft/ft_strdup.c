@@ -22,10 +22,8 @@ char	*ft_strdup(const char *s)
 	i = 0;
 	if (!s2)
 	{
-		printf("lala\n");
 		return (0);
 	}
-	printf("el\n");
 	while (s[i])
 	{
 		s2[i] = s[i];

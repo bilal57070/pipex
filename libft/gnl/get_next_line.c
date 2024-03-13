@@ -111,15 +111,3 @@ char	*get_next_line(int fd)
 	}
 	return (line);
 }
-/*
-int	main()
-{
-	int		fd;
-	char	*buf;
-	int	i = -1;
-
-	fd = open ("rev.c", O_RDONLY);
-	while (++i != 5)
-		printf("%s\n",get_next_line(fd));
-	
-}*/

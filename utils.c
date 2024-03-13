@@ -61,7 +61,7 @@ char	*pathcmd(t_stru *stru, char *cmd)
 			return (test);
 		free(test);
 	}
-	printf("probleme accès ou exec cmd \n");
+	ft_printf("probleme accès ou exec cmd \n");
 	return (0);
 }
 

@@ -31,15 +31,3 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int	main()
-{
-	const char	*str = " febf jefj hello";
-	const char	*str2 = "hello";
-	size_t		i;
-
-	i = 50;
-	printf("%s\n", ft_strnstr(str, str2, i));
-	printf("%s\n", strnstr(str, str2, i));
-}
-*/

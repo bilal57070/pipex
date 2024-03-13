@@ -27,11 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s + i);
 	return (0);
 }
-/*
-int	main()
-{
-	char *s = "hel880t4d";
-
-	printf("%s\n", ft_strchr(s, '8' + 0));
-	printf("%s\n", strrchr(s, '8' + 0));
-}*/

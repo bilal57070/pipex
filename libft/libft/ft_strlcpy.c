@@ -28,11 +28,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (ft_strlen(src));
 }
-/*
-int	main()
-{
-	char *dst = "oui";
-	char *src = "non";
-	size_t size = 10;
-	printf("%lu", strlcpy(dst, src, size));
-}*/

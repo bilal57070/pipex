@@ -36,10 +36,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = ft_substr(s1, i, n - i);
 	return (str);
 }
-/*int	main()
-{
-	char	*str = "    hello   ";
-	char	*set = " ";
-	printf("%s", ft_strtrim(str, set));
-	
-}*/
